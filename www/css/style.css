@@ -7,10 +7,21 @@ Dark green: #28b485
 
 */
 
+@font-face {
+    font-family: OpenDys;
+    src: url(../fonts/OpenDyslexic3-Regular.ttf);
+}
+@font-face {
+    font-family: OpenDys;
+    src: url(../fonts/OpenDyslexic3-Bold.ttf);
+    font-weight: bold;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: OpenDys;
 }
 
 body {
@@ -45,7 +56,6 @@ body {
 
 .heading-primary {
 	color: #FFF;
-	text-transform: uppercase;
 
 	backface-visibility: hidden;
 	margin-bottom: 60px;
@@ -55,7 +65,6 @@ body {
 	display: block;
 	font-size: 60px;
 	font-weight: 400;
-	letter-spacing: 35px;
 
 	animation-name: moveInLeft;
 	animation-duration: 1s;
